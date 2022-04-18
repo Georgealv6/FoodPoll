@@ -7,7 +7,7 @@ import json as simplejson
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-pusher = Pusher(app_id=u'1384864', key=u'dac14031a631f38eba3a', secret=u'322aa1bcf23a51b4bfcb', cluster=u'us2')
+pusher = Pusher(app_id=u'1384864', key=u'ce20660fbfcfd0ed0646', secret=u'61df65f31198b151c360', cluster=u'us2')
 database = "./pythonsqlite.db"
 conn = create_connection(database)
 c = conn.cursor()

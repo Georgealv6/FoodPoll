@@ -1,4 +1,5 @@
 var pollMembers = document.querySelectorAll('.poll-member')
+
 var members = ['Pizza', 'Burgers', 'Tacos', 'Pasta']
 
 
@@ -10,15 +11,12 @@ pollMembers.forEach((pollMember, index) => {
 })
 
 var handlePoll = function(member) {
-    axios.post('http://localhost:5000/vote', { member: member })
-        .then((data) => {
-            console.log('data sent')
-        })
+    axios.post('http://localhost:5000/vote', { member }).then((r) => console.log(r))
 }
 
 
 
-var pusher = new Pusher('dac14031a631f38eba3a', {
+var pusher = new Pusher('ce20660fbfcfd0ed0646', {
     cluster: 'us2',
     encrypted: true
 });
@@ -37,7 +35,3 @@ channel.bind('vote', function(data) {
 
     }
 });
-
-let calculatePercentage = function(total, amount) {
-    return (amount / total) * 100 + "%"
-}

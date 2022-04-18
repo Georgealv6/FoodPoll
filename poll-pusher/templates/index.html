@@ -5,61 +5,37 @@
     <meta charset="utf-8">
     <title>Popular Food</title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <style type="text/css">
-        .poll-member h1 {
-            cursor: pointer
-        }
-        
-        .percentageBarParent {
-            height: 22px;
-            width: 100%;
-            border: 1px solid black;
-        }
-        
-        .percentageBar {
-            height: 20px;
-            width: 0%;
-        }
-    </style>
+    <link rel="stylesheet" href="../custom/style.css">
 </head>
 
 <body>
     <div class="main">
         <div class="container">
-            <h1>What's your favorite food?</h1>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="poll-member Pizza">
-                            <h1>Pizza&nbsp;&nbsp;</h1>
-                            <div class="percentageBarParent">
-                                <div class="percentageBar" id="Pizza"></div>
+            <div class="col-md-9 offset-md-3">
+                <h1>What's your favorite food?</h1>
+                <div class="col-md-8">
+                    <div class="row offset-1">
+                        <div class="col-md-6 ">
+                            <div class="poll-member Pizza ">
+                                <button type="button " class="btn btn-primary btn-lg" id="Pizza ">Pizza</button><br>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="poll-member Burgers ">
+                                <button type="button " class="btn btn-primary btn-lg" id="Burgers ">Burgers</button><br>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="poll-member Burgers">
-                            <h1>Burgers&nbsp;&nbsp;</h1>
-                            <div class="percentageBarParent">
-                                <div class="percentageBar" id="Burgers"></div>
+                    <br>
+                    <div class="row offset-1 ">
+                        <div class="col-md-6">
+                            <div class="poll-member Tacos ">
+                                <button type="button " class="btn btn-primary btn-lg " id="Tacos ">Tacos</button><br>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="poll-member Tacos">
-                            <h1>Tacos&nbsp;&nbsp;</h1>
-                            <div class="percentageBarParent">
-                                <div class="percentageBar" id="Tacos"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="poll-member Pasta">
-                            <h1>Pasta&nbsp;&nbsp;</h1>
-                            <div class="percentageBarParent">
-                                <div class="percentageBar" id="Pasta"></div>
+                        <div class="col-md-6">
+                            <div class="poll-member Pasta ">
+                                <button type="button " class="btn btn-primary btn-lg " id="Pasta ">Pasta</button><br>
                             </div>
                         </div>
                     </div>
@@ -68,11 +44,12 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script type="text/javascript " src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js "></script>
+    <script src="https://js.pusher.com/4.0/pusher.min.js "></script>
+    <script type="text/javascript " src="{{ url_for( 'static', filename='app.js' ) }} " defer></script>
 </body>
 
 </html>
